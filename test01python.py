@@ -11,7 +11,7 @@ while True:
   with sr.Microphone() as source:
     print("Parlez maintenant...")
     audio = r.listen(source)
-    print('fin de l'enregistrement')
+    print("fin de l'enregistrement")
     prompt=r.recognize_google(audio, language='fr-FR')
   completion = client.chat.completions.create(
     model="TheBloke/Mistral-7B-Instruct-v0.2-GGUF",
