@@ -1,6 +1,10 @@
 import os
-os.system("pip install RealtimeTTS")
+os.system("python.exe -m pip install --upgrade pip")
 os.system("sudo pip3 install SpeechRecognition")
 os.system("sudo apt-get install espeak")
 os.system("sudo apt-get install python-espeak")
 os.system("pip install --upgrade openai")
+os.system("python -m venv env_realtimetts")
+os.system("env_realtimetts\Scripts\activate.bat")
+os.system("pip install RealtimeTTS")
+os.system("pip install torch==2.3.0+cu118 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu118")
