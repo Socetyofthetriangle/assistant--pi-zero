@@ -1,5 +1,7 @@
 import os
 os.system("python.exe -m pip install --upgrade pip")
+os.system('sudo -H pip3 install --upgrade pip')
+os.system('sudo -H pip2 install --upgrade pip')
 os.system("sudo pip3 install SpeechRecognition")
 os.system("sudo apt-get install espeak")
 os.system("sudo apt-get install python-espeak")
